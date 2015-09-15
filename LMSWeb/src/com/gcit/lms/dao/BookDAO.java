@@ -10,12 +10,11 @@ import com.gcit.lms.domain.Author;
 import com.gcit.lms.domain.Book;
 import com.gcit.lms.domain.Genre;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({ "unchecked", "rawtypes" })
 public class BookDAO extends BaseDAO {
 
 	public BookDAO(Connection conn) {
 		super(conn);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void createBook(Book book) throws ClassNotFoundException,

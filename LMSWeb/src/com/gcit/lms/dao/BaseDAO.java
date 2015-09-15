@@ -61,7 +61,7 @@ public abstract class BaseDAO<T> {
 		return (List<T>) extractData(rs);
 	}
 	
-	abstract public List<?> extractData(ResultSet rs);
+	abstract public List<?> extractData(ResultSet rs) throws SQLException;
 	
 	
 	public List<?> readFirstLevel(String query, Object[] vals) throws ClassNotFoundException, SQLException{
